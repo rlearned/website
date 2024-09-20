@@ -1,0 +1,108 @@
+<!-- blog-post-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optimizing Flight Search with FreeFly | Ross Learned</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Theme Check Script -->
+    <script>
+        // Immediately apply dark mode if set in localStorage
+        (function() {
+            const currentTheme = localStorage.getItem('theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+<!-- Left Sidebar -->
+<div class="sidebar">
+    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h2>Ross Learned</h2>
+    <p>Informatics and Finance Student</p>
+    <div class="social-icons">
+        <a href="https://linkedin.com/in/ross-learned" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/rlearned" target="_blank">
+            <img src="images/github.png" alt="GitHub">
+        </a>
+        <a href="https://leetcode.com/u/rosslearned/" target="_blank">
+            <img src="images/leetcode.png" alt="LeetCode">
+        </a>
+        <a href="https://www.instagram.com/ross_l__" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+    </div>
+    <div class="other-website">
+        <p>Long.MAX_VALUE:</p>
+        <a href="https://9223372036854775807.com" target="_blank">9223372036854775807.com</a>
+    </div>
+</div>
+
+<!-- Main Content Wrapper -->
+<div class="content-wrapper">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Ross Learned</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <!-- Dark Mode Toggle -->
+                <button id="dark-mode-toggle" class="btn btn-link nav-link p-0">
+                    <img src="images/moon-icon.png" alt="Switch to Dark Mode" id="dark-mode-icon" class="d-inline-block align-text-top">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <main>
+            <section>
+                <h2 class="mt-4">Optimizing Flight Search with FreeFly</h2>
+                <p><small class="text-muted">Posted on October 1, 2023</small></p>
+                <p>In developing FreeFly, I explored ways to optimize flight search functionalities. By integrating the Amadeus Flight API and Seats.aero API, and implementing caching mechanisms, I reduced response times by over 50%.</p>
+                <p>One of the key challenges was handling the large volume of data and ensuring real-time updates. I utilized asynchronous processing and implemented a caching layer using Redis to store frequently accessed data. This significantly improved the application's performance and user experience.</p>
+                <p>Another important feature was the real-time alert system. By integrating RabbitMQ and Twilio, users could receive instant notifications via SMS and email when desired flight availability changed. This feature greatly enhanced user engagement and satisfaction.</p>
+                <p>Deploying the application on Google Cloud Platform (GCP) with services like Google App Engine and Cloud SQL ensured scalability and high availability. This project not only honed my technical skills but also deepened my understanding of cloud infrastructure and microservices architecture.</p>
+            </section>
+        </main>
+    </div>
+
+<!--    &lt;!&ndash; Footer &ndash;&gt;-->
+<!--    <footer class="footer">-->
+<!--        <p>&copy; 2023 Ross Learned</p>-->
+<!--    </footer>-->
+
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
